@@ -1,0 +1,43 @@
+telegram:
+  api_id: 123456
+  api_hash: "your_api_hash"
+  session_name: "dealsieve"
+  session_path: null
+
+filters:
+  groups_allowlist:
+    - "nome_gruppo_pubblico"
+    - -1001234567890
+  keywords_include:
+    - "filamento"
+    - "pla"
+  keywords_exclude:
+    - "usato"
+  keyword_match: "whole"
+  price_min: null
+  price_max: null
+  require_store_link: true
+  allowed_link_domains:
+    - "amazon."
+    - "amzn.to"
+    - "amzn.eu"
+    - "a.co"
+    - "amzlink.to"
+    - "aliexpress."
+    - "s.click.aliexpress.com"
+
+dedupe:
+  db_path: "dealsieve.db"
+  ttl_hours: 24
+
+output:
+  send_to: "me"
+  include_original: true
+  max_text_chars: 600
+  mode: "telethon"
+  bot_token: null
+  bot_chat_id: null
+
+logging:
+  level: "INFO"
+  color: true

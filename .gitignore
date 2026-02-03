@@ -1,0 +1,6 @@
+config.yaml
+*.session
+*.session-journal
+dealsieve.db
+__pycache__/
+.venv/
